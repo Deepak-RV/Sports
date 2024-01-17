@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN Sudo apt update
-RUN sudo apt install apache2 -y
+RUN apt-get update
+RUN apt-get install apache2 -y
 RUN rm /var/www/html/index.html
-Add ./index.html /var/www/html/
+Add ./sports.html /var/www/html/
